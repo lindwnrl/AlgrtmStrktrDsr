@@ -1,0 +1,39 @@
+package Jobsheet2;
+
+
+public class Mahasiswa17 {
+    public static void main(String[] args) {
+        
+    
+        String nim;
+        String nama;
+        String kelas;
+        double ipk;
+        } 
+    
+    static void tampilInformasi(){
+        System.out.println("Nama: "+ nama);
+        System.out.println("NIM: "+ nim);
+        System.out.println("IPK: "+ ipk);
+        System.out.println("Kelas: "+ kelas);
+    }
+    static void ubahKelas(String kelasBaru){
+        kelas = kelasBaru;
+    }
+    static void updateIpk(double ipkBaru){
+        ipk = ipkBaru;
+    }
+    static String nilaiKinerja(){
+        if (ipk >= 3.5) {
+            return "Kenerja Sangat Baik";
+        }else if (ipk >= 3.0) {
+            return "Kinerja Baik";
+        }else if (ipk >= 2.0) {
+            return "Kinerja Cukup";
+        }else if (ipk >= 1.0){
+            return "Kinerja Kurang";
+        }else if (ipk <= 0.0 && ipk <= 4.0) {
+            return "IPK tidak valid.Harus antara 0.0 dan 4.0";
+        }
+    }
+}
