@@ -15,7 +15,7 @@ public class MatakuliahMain17 {
         mk1.tampilkanInformasi();
         System.out.println();
 
-        MataKuliah17 mk2 = new MataKuliah17("Los Bijos", "Basis Data", 3, 4);
+        MataKuliah17 mk2 = new MataKuliah17("Los Bijos", "Basis Data", 3, 1);
         mk2.ubahSks(2);
         mk2.kurangJam(2);
         mk2.tampilkanInformasi();
