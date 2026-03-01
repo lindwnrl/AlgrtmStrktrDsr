@@ -16,23 +16,23 @@ public class MahasiswaDemo17 {
         myArrayOfMahasiswa[0].kelas = "SIB 1E";
         myArrayOfMahasiswa[0].ipk = (float) 3.75;
         System.out.println("NIM         :"+myArrayOfMahasiswa[0].nim);
-        System.out.println("Nama        :"+arrayOfMahasiswa[0].nama);
-        System.out.println("Kelas       :"+arrayOfMahasiswa[0].kelas);
-        System.out.println("IPK         :"+arrayOfMahasiswa[0].ipk);
+        System.out.println("Nama        :"+myArrayOfMahasiswa[0].nama);
+        System.out.println("Kelas       :"+myArrayOfMahasiswa[0].kelas);
+        System.out.println("IPK         :"+myArrayOfMahasiswa[0].ipk);
 
-        for (int i = 0; i < arrayOfMahasiswa.length; i++) {
-            arrayOfMahasiswa [i] = new Mahasiswa17 ();
+        for (int i = 0; i < myArrayOfMahasiswa.length; i++) {
+            myArrayOfMahasiswa [i] = new Mahasiswa17 ();
 
             System.out.println("Masukkan Data Mahasiswa ke-"+ (i+1));
             System.out.print("NIM   :");
-            arrayOfMahasiswa[i].nim = sc.nextLine();
+            myArrayOfMahasiswa[i].nim = sc.nextLine();
             System.out.print("Nama    :");
-            arrayOfMahasiswa[i].nama = sc.nextLine();
+            myArrayOfMahasiswa[i].nama = sc.nextLine();
             System.out.print("Kelas   :");
-            arrayOfMahasiswa[i].kelas = sc.nextLine();
+            myArrayOfMahasiswa[i].kelas = sc.nextLine();
             System.out.print("IPK     :");
             dummy = sc.nextLine();
-            arrayOfMahasiswa[i].ipk = Float.parseFloat(dummy);
+            myArrayOfMahasiswa[i].ipk = Float.parseFloat(dummy);
             System.out.print("--------------------------------");
             System.out.println();
             
