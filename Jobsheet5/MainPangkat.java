@@ -20,8 +20,10 @@ public class MainPangkat {
         for (Pangkat p : png){
             System.out.println(p.nilai+"^"+p.pangkat+": "+p.pangkatBF(p.nilai, p.pangkat));
         }
+        System.out.println("Hasil pangkat Divide and Conquer");
         for (Pangkat p : png){
             System.out.println(p.nilai+"^"+p.pangkat+": "+p.pangkatDC(p.nilai, p.pangkat));
         }
+        sc.close();
     }
 }
